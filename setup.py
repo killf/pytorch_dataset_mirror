@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="torch_dataset_mirror",
-    version="0.2.0",
+    version="0.2.1",
     license="Apache License",
     author="killf",
     author_email="killf@foxmail.com",

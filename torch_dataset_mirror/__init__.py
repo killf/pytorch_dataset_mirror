@@ -61,7 +61,7 @@ try:
             'base_dir': os.path.join('VOCdevkit', 'VOC2012')
         },
         '2011': {
-            'url': join(DATA_PATH, 'http://host.robots.ox.ac.uk/pascal/VOC/voc2011/VOCtrainval_25-May-2011.tar'),
+            'url': join(DATA_PATH, 'VOCtrainval_25-May-2011.tar'),
             'filename': 'VOCtrainval_25-May-2011.tar',
             'md5': '6c3384ef61512963050cb5d687e5bf1e',
             'base_dir': os.path.join('TrainVal', 'VOCdevkit', 'VOC2011')
