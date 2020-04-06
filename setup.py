@@ -5,12 +5,12 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="torch_dataset_mirror",
-    version="0.2.1",
+    name="pytorch_mirror",
+    version="0.3.1",
     license="Apache License",
     author="killf",
     author_email="killf@foxmail.com",
-    description="pytorch数据集国内镜像",
+    description="pytorch模型、数据集国内镜像",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/killf/pytorch_dataset_mirror",

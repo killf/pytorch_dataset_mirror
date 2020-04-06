@@ -1,7 +1,7 @@
 import os
 from os.path import join
 
-BASE_PATH = os.environ.get('PYTORCH_DATASET_MIRROR', 'http://pytorch_dataset_mirror.killf.info')
+BASE_PATH = os.environ.get('PYTORCH_DATASET_MIRROR', 'http://pytorch_mirror.killf.info')
 
 try:
     import torchvision
@@ -53,7 +53,7 @@ try:
     torchvision.datasets.cifar.CIFAR100.url = join(DATA_PATH, 'cifar-100-python.tar.gz'),
 
     DATA_PATH = join(BASE_PATH, 'torchvision', 'pascal')
-    DATASET_YEAR_DICT = {
+    torchvision.datasets.voc.DATASET_YEAR_DICT = {
         '2012': {
             'url': join(DATA_PATH, 'VOCtrainval_11-May-2012.tar'),
             'filename': 'VOCtrainval_11-May-2012.tar',
