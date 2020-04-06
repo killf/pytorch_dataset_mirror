@@ -72,5 +72,34 @@ try:
     vgg_model_urls["vgg13_bn"] = join(MODEL_PATH, 'vgg13_bn-abd245e5.pth')
     vgg_model_urls["vgg16_bn"] = join(MODEL_PATH, 'vgg16_bn-6c64b313.pth')
     vgg_model_urls["vgg19_bn"] = join(MODEL_PATH, 'vgg19_bn-c79401a0.pth')
+
+    from torchvision.models.quantization.googlenet import model_urls as googlenet_model_urls
+    from torchvision.models.quantization.inception import model_urls as inception_model_urls
+    from torchvision.models.quantization.mobilenet import model_urls as mobilenet_model_urls
+    from torchvision.models.quantization.resnet import model_urls as resnet_model_urls
+    from torchvision.models.quantization.shufflenetv2 import model_urls as shufflenetv2_model_urls
+
+    googlenet_model_urls["googlenet_fbgemm"] = join(MODEL_PATH, 'googlenet_fbgemm-c00238cf.pth')
+
+    inception_model_urls["inception_v3_google_fbgemm"] = join(MODEL_PATH, 'inception_v3_google_fbgemm-4f6e4894.pth')
+
+    mobilenet_model_urls["mobilenet_v2_qnnpack"] = join(MODEL_PATH, 'mobilenet_v2_qnnpack_37f702c5.pth')
+
+    resnet_model_urls["resnet18_fbgemm"] = join(MODEL_PATH, 'resnet18_fbgemm_16fa66dd.pth')
+    resnet_model_urls["resnet50_fbgemm"] = join(MODEL_PATH, 'resnet50_fbgemm_bf931d71.pth')
+    resnet_model_urls["resnext101_32x8d_fbgemm"] = join(MODEL_PATH, 'resnext101_32x8_fbgemm_09835ccf.pth')
+
+    shufflenetv2_model_urls["shufflenetv2_x1.0_fbgemm"] = join(MODEL_PATH, 'shufflenetv2_x1_fbgemm-db332c57.pth')
+
+    from torchvision.models.segmentation.segmentation import model_urls as segmentation_model_urls
+
+    segmentation_model_urls["fcn_resnet101_coco"] = join(MODEL_PATH, 'fcn_resnet101_coco-7ecb50ca.pth')
+    segmentation_model_urls["deeplabv3_resnet101_coco"] = join(MODEL_PATH, 'deeplabv3_resnet101_coco-586e9e4e.pth')
+
+    from torchvision.models.video.resnet import model_urls as resnet_model_urls
+
+    resnet_model_urls["r3d_18"] = join(MODEL_PATH, 'r3d_18-b3b3357e.pth')
+    resnet_model_urls["mc3_18"] = join(MODEL_PATH, 'mc3_18-a90a0ba3.pth')
+    resnet_model_urls["r2plus1d_18"] = join(MODEL_PATH, 'r2plus1d_18-91a641e6.pth')
 except ImportError:
     pass
