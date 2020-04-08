@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pytorch_mirror",
-    version="0.4.0",
+    version="0.5.0",
     license="Apache License",
     author="killf",
     author_email="killf@foxmail.com",
