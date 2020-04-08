@@ -2,13 +2,12 @@
 
 ### 一、使用方法
 
-只需要在使用模型或数据集之前导入`torch_model_mirror`或`torch_dataset_mirror`模块即可，如下：
+只需要在使用模型或数据集之前导入`torchmirror.dataset`或`torchmirror.model`模块即可，如下：
 
 ```python
 import torch
-import torch_dataset_mirror
-import torch_model_mirror
 import torchvision.datasets.mnist as mnist
+from torchmirror import dataset, model
 
 train_dataset = mnist.MNIST("./data", train=True, download=True)
 test_dataset = mnist.MNIST("./data", train=False, download=True)
